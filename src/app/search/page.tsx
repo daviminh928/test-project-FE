@@ -37,7 +37,9 @@ export default function SearchPage() {
     setDogs(dogsData);
     setLoading(false); // 🔹 Stop loading
   };
-
+  const toggleSortOrder = () => {
+    setSortOrder((prev) => (prev === 'asc' ? 'desc' : 'asc'));
+  };
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold">Search for Dogs</h1>

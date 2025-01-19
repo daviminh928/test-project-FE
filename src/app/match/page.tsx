@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import { matchDogs, fetchDogsByIds } from '@/utils/api';
 
 export default function MatchPage() {
-  const [matchId, setMatchId] = useState<string | null>(null);
+//   const [matchId, setMatchId] = useState<string | null>(null);
   const [matchedDog, setMatchedDog] = useState<any>(null);
 
   useEffect(() => {
     const findMatch = async () => {
       const match = await matchDogs(["favorite-dog-id"]);
-      setMatchId(match);
+    //   setMatchId(match);
       const dogDetails = await fetchDogsByIds([match]);
       setMatchedDog(dogDetails[0]);
     };

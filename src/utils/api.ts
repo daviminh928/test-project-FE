@@ -23,10 +23,11 @@ export const fetchBreeds = async (): Promise<string[]> => {
 };
 
 // 🔹 Search for dogs
-export const searchDogs = async (params: Record<string, any>) => {
-  const response = await api.get('/dogs/search', { params });
-  return response.data;
+export const searchDogs = async (params: Record<string, string | number | string[]>): Promise<{ resultIds: string[]; total: number; next?: string }> => {
+    const response = await api.get('/dogs/search', { params });
+    return response.data;
 };
+  
 
 // 🔹 Fetch dogs by IDs
 export const fetchDogsByIds = async (ids: string[]) => {

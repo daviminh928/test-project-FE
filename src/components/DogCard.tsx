@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 interface Dog {
   id: string;
   img: string;
@@ -12,7 +12,7 @@ interface Dog {
 const DogCard: React.FC<{ dog: Dog }> = ({ dog }) => {
   return (
     <div className="border p-4 rounded shadow-md">
-      <img src={dog.img} alt={dog.name} className="w-full h-32 object-cover rounded" />
+      <Image src={dog.img} alt={dog.name} width={300} height={200} className="w-full h-32 object-cover rounded" />
       <h2 className="text-lg font-bold mt-2">{dog.name}</h2>
       <p>Age: {dog.age}</p>
       <p>Breed: {dog.breed}</p>
