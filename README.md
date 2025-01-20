@@ -3,7 +3,7 @@
 Welcome to **Fetch Dog Finder**, a Next.js-based application that helps dog lovers search and adopt shelter dogs. This project uses **Next.js App Router, TailwindCSS, and TypeScript**.
 
 ## 🚀 Live Demo
-🔗 **[Live Site](https://your-deployment-url.vercel.app/)** (Replace with your Vercel/Netlify URL)
+🔗 **[Live Site](https://your-deployment-url.vercel.app/](https://test-project-fe-psi.vercel.app/))** (Replace with your Vercel/Netlify URL)
 
 ---
 
