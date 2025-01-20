@@ -32,5 +32,5 @@ Welcome to **Fetch Dog Finder**, a Next.js-based application that helps dog love
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/your-username/fetch-dog-finder.git
+git clone https://github.com/daviminh928/test-project-FE.git
 cd fetch-dog-finder
